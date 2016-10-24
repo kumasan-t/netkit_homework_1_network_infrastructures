@@ -1,0 +1,3 @@
+ifconfig eth1 195.10.0.34 netmask 255.255.255.252 broadcast 195.10.0.35 up
+route add -net 195.10.0.32 netmask 255.255.255.252 gw 195.10.0.33 dev eth1
+route add -net 195.10.0.0 netmask 255.255.255.224 gw 195.10.0.33 dev eth1
