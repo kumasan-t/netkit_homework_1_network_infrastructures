@@ -1,0 +1,2 @@
+ifconfig eth0 195.10.0.66 netmask 255.255.255.224 broadcast 195.10.0.95 up
+route add default gw 195.10.0.65 dev eth0

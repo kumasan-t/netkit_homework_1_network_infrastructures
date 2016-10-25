@@ -1,7 +1,10 @@
 ifconfig eth1 195.10.0.2 netmask 255.255.255.252 broadcast 195.10.0.3 up
 ifconfig eth2 195.10.0.14 netmask 255.255.255.252 broadcast 195.10.0.15 up
 ifconfig eth3 195.10.0.6 netmask 255.255.255.252 broadcast 195.10.0.7 up
+ifconfig eth0 195.10.0.65 netmask 255.255.255.224 broadcast 195.10.0.95 up
 
 #Route configuration
 route add -net 195.10.0.8 netmask 255.255.255.252 gw 195.10.0.13 dev eth2
 route add -net 195.10.0.16 netmask 255.255.255.252 gw 195.10.0.13 dev eth2
+route add -net 195.10.0.32 netmask 255.255.255.224 gw 195.10.0.1 dev eth1
+route add -net 195.10.0.96 netmask 255.255.255.224 gw 195.10.0.5 dev eth3
